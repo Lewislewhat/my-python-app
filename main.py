@@ -33,14 +33,14 @@ def main(page: ft.Page):
         text_display.value = "Hello from Python!"
         page.update()
 
-    click_button = ft.ElevatedButton(
-        text="Click Me!",
+    click_button = ft.Button(
+        content="Click Me!",
         icon=ft.Icons.THUMB_UP,
         on_click=on_button_click
     )
 
     reset_button = ft.OutlinedButton(
-        text="Reset",
+        content="Reset",
         icon=ft.Icons.REFRESH,
         on_click=on_reset_click
     )
