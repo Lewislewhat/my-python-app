@@ -1,36 +1,37 @@
 import flet as ft
 
 def main(page: ft.Page):
-    page.title = "Simple Android App"
+    page.title = "Sidon and Tomas App"
     page.vertical_alignment = ft.CrossAxisAlignment.CENTER
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
 
     counter = 0
 
     text_display = ft.Text(
-        value="Hello from Python!",
-        size=28,
+        value="Hello Sidon and Tomas, This is me Lewhat!",
+        size=24,
         weight=ft.FontWeight.BOLD,
-        color=ft.Colors.BLUE_600
+        color=ft.Colors.BLUE_600,
+        text_align=ft.TextAlign.CENTER
     )
 
     counter_label = ft.Text(
         value=f"Clicks: {counter}",
-        size=20
+        size=18
     )
 
     def on_button_click(e):
         nonlocal counter
         counter += 1
         counter_label.value = f"Clicks: {counter}"
-        text_display.value = "Button Pressed! 🎉"
+        text_display.value = "What do you like Sidon?"
         page.update()
 
     def on_reset_click(e):
         nonlocal counter
         counter = 0
         counter_label.value = f"Clicks: {counter}"
-        text_display.value = "Hello from Python!"
+        text_display.value = "Did you play PUBG, Tomas?"
         page.update()
 
     click_button = ft.Button(
