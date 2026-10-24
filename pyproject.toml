@@ -1,0 +1,12 @@
+[tool.flet.app]
+product = "Simple Python App"
+company = "Lewis"
+copyright = "Copyright (C) 2026"
+
+[project]
+name = "simple_python_app"
+version = "1.0.0"
+dependencies = [
+    "flet>=1.0.0",
+]
+requires-python = ">=3.9"
